@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FCCA3 simple viewer</title>
+	<script src="./three.js"></script>
+	<script src="./FCCA3SVauto.js"></script>
+	<style>
+		body {padding:0px; margin:0px}
+		canvas#canvas-frame{
+			width: 640px;
+			height: 540px;
+			overflow:hidden;
+		}
+	</style>
+</head>
+<body>
+	<canvas id="canvas-frame"></canvas>
+	<div>Press any key to start!</div>
+	<span>gen.</span><span id="counter">0</span>
+	<span>, pop.(#1,#2):</span><span id="population">0,0</span>
+</body>
+</html>
