@@ -1,4 +1,4 @@
-# FCCA3
+# FCCA3 simulator
 This is a FCCA3 (Face-centered Cubic Cellular Automata with 3 states) simulator.  
 This program needs three.js and is confirmed to run on r137 (https://github.com/mrdoob/three.js/releases).
 
