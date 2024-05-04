@@ -6,7 +6,7 @@ This program needs three.js and is confirmed to run on r137 (https://github.com/
 1. Copy the files "FCCA3SV.html", "FCCA3SV.js", and "three.js" in a same folder.
 2. Drag and drop the file "FCCA3SV.html" into the browser.
 
-## How yo quit:
+## How to quit:
 Close the "FCCA3SV.html" tab of the browser.
 
 ## How to edit the configuration
