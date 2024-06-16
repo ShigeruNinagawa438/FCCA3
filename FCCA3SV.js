@@ -51,13 +51,15 @@ const rTbl  =	[////// c = 0
 		2 ];				// #2 = 12	f(2,12,0)=2
 
 
+
+const  rTblLen = 273;  // length of rTbl
+const  N_singleRls = 91;  // # of rules per states = rTblLen / N_ST
 const  N_ST = 3;  // # of states
 const  N_NBR = 13; // # of cells in neighborhood
 const  X_SIZE = 16;  // any 3-D array size 
 const  Y_SIZE = 22;  // even only
 const  Z_SIZE = 22;  // even only
 const  totCells = X_SIZE * Y_SIZE * Z_SIZE;
-const  N_singleRls = rTbl.length / N_ST;  // # of rules per states
 let  Base = Array(N_NBR);  // Base[x]: index of rule with x = #2
 let  Rtbl = Array(N_ST);
 let  step = 0;
@@ -191,7 +193,7 @@ function countSurrounding(x, y, z, side){
 function countPop(){
 
 	for (let i = 0; i < pop.length; i++) {
-	    pop[i] = 0;
+	    pop[i] = 0;		
 	}
 	let side = step % 2;
 	for(let x = 0; x < X_SIZE; x++){
@@ -207,7 +209,7 @@ function countPop(){
 //  initial setting
 //////////////////////////////////////////////////////////////////////
 function init() {
-	if(rTbl.length != 273){
+	if(rTbl.length != rTblLen){
 		window.alert("rule table broken");
 	}
 	document.addEventListener("keydown",loop,false);
